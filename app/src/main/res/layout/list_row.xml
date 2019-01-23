@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_movie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            />
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <!-- Movie Title -->
+            <TextView
+                android:gravity="center|left"
+                android:hint="Title"
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/title"
+                android:textStyle="bold" />
+
+            <!-- Rating -->
+            <TextView
+                android:gravity="center|left"
+                android:id="@+id/tv_rating"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dip"
+                android:layout_weight="1"
+                android:hint="rating"
+                android:textSize="@dimen/rating" />
+
+            <!-- Genre -->
+            <TextView
+                android:hint="genre"
+                android:gravity="center|left"
+                android:id="@+id/tv_genre"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+               android:layout_weight="1"
+                android:textColor="@color/genre"
+                android:textSize="@dimen/genre" />
+
+            <!-- Release Year -->
+            <TextView
+                android:hint="releaseYear"
+                android:id="@+id/tv_releaseYear"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/year"
+                android:textSize="@dimen/year" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
